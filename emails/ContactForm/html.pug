@@ -9,7 +9,7 @@ div(style='padding: 0 15px 35px 15px;background-color: #ffffff;text-align: left;
                 |
                 strong(style='padding-right: 10px;') Subject:
                 td(style='padding: 0px;border-width: 0px;margin: 0px;border-style: none;overflow: hidden;word-break: normal;text-align: left;vertical-align: top;')
-                | Test sending email from postman
+                | #{subject}
             tr
                 td(style='padding: 0px;border-width: 0px;margin: 0px;border-style: none;overflow: hidden;word-break: normal;text-align: left;vertical-align: top;')
                     div(style='height: 10px;overflow: hidden;') &nbsp;
@@ -20,18 +20,18 @@ div(style='padding: 0 15px 35px 15px;background-color: #ffffff;text-align: left;
                 |
                 strong(style='padding-right: 10px;') Name:
                 td(style='padding: 0px;border-width: 0px;margin: 0px;border-style: none;overflow: hidden;word-break: normal;text-align: left;vertical-align: top;')
-                | Jake Waltrip
+                | #{name}
             tr
                 td(style='padding: 0px;border-width: 0px;margin: 0px;border-style: none;overflow: hidden;word-break: normal;text-align: left;vertical-align: top;')
                 |
                 strong(style='padding-right: 10px;') Email:
                 td(style='padding: 0px;border-width: 0px;margin: 0px;border-style: none;overflow: hidden;word-break: normal;text-align: left;vertical-align: top;')
-                | jake.waltrip.dev@gmail.com
+                | #{email}
     div
         div(style='font-weight: bold;margin-bottom: 7px;margin-left: 5px;') Message:
-        div(style='background-color: rgba(217, 217, 217, 0.5);color: #2b2b2b;padding: 15px;border-radius: 10px;width: fit-content;')
-            | This is a test message sent from postman. Still working???!!!
+        div(style='background-color: rgba(217, 217, 217, 0.5);color: #2b2b2b;padding: 15px;border-radius: 10px;width: fit-content;max-width: 500px;')
+            | #{message}
     div
         div(style='font-size: 0.75rem;margin-top: 10px;margin-right: auto;margin-left: 10px;color: rgba(0, 0, 0, 0.8) !important;width: fit-content;')
-            span(style='margin-right: 5px;') recieved
-            | May 5, 2019 @ 9:29 PM
+            span(style='margin-right: 5px;') received
+            | #{date}
