@@ -21,8 +21,8 @@ exports.sendEmail = function (recipient, name, subject, message) {
   
     Promise
       .all([
-        email.render('test/html', locals),
-        email.render('test/subject', locals)
+        email.render('ContactForm/html', locals),
+        email.render('ContactForm/subject', locals)
       ])
       .then(([ html, subject ]) => {
         console.log('html: ', html);
